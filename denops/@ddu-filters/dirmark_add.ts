@@ -15,7 +15,7 @@ export class Filter extends BaseFilter<Params> {
     items: DduItem[];
   }): Promise<DduItem[]> {
     for (const item of args.items) {
-      item.kind = "ddu-";
+      item.kind = "ddu-dirmark_add";
       if (item.display) {
         item.matcherKey = item.display;
       }
