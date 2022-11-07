@@ -27,6 +27,8 @@ export class Kind extends BaseKind<Params> {
       console.log(jsonString);
       const json = JSON.parse(jsonString);
       console.log(json);
+
+      return ActionFlags.None;
     },
   }
 }
